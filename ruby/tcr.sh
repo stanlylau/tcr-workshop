@@ -3,7 +3,7 @@ test() {
 }
 
 revert() {
-    DIR_TO_REVERT="lib"
+    DIR_TO_REVERT="lib spec"
     git checkout HEAD -- $DIR_TO_REVERT && git reset HEAD $DIR_TO_REVERT -- && git clean -fd $DIR_TO_REVERT
 }
 
